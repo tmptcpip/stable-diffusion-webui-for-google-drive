@@ -137,6 +137,7 @@ def git_clone(url, dir, name, commithash=None):
     # TODO clone into temporary dir and move if successful
 
     if os.path.exists(dir):
+        return
         if commithash is None:
             return
 
